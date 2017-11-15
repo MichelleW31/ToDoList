@@ -11,7 +11,7 @@ body{
     margin:20px auto;
     width: 55%;
     max-width:300px;
-    min-width:283px;
+    min-width:255px;
     display:flex;
     flex-direction:column;
     background-color:#fff;
@@ -28,7 +28,7 @@ body{
 
 #list p{
    font-family: 'Open Sans', sans-serif;
-   font-size:15px;
+   font-size:13px;
    margin-bottom: 15px;
 }
 
@@ -88,4 +88,10 @@ ol li img{
 #list button:hover{
     background-color:#ff1493;
 
+}
+
+@media screen and (min-width:480px){
+    #list p{
+        font-size:15px;
+    }
 }
