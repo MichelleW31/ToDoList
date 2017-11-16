@@ -4,7 +4,7 @@
       restrict:"A",
       link: function($scope, $element, $attrs){
         $element.on("mouseenter", function(){
-          $element.css("background-color", "#eee");
+          $element.css("background-color", "#eee").css("cursor","pointer");
         });
         $element.on("mouseleave", function(){
           $element.css("background-color", "white");
