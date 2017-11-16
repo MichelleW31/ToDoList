@@ -7,23 +7,18 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-  <div id="list">
-    <h1>TODO List</h1>
-    <p>A place to store the things you have to do!</p>
-    <input type="text" ng-model="filterTry" placeholder="Filter your to-dos"/>
-    <ol>
-      <li list-hover ng-repeat="items in form.taskArray |filter: filterTry">{{items}}<img src="images/X1.png" ng-click="form.removeItem($index)"/></li>
-    </ol>
-    <input type="text"/ ng-model="form.task" placeholder="Add your to do">
-    <button ng-click = "form.addItem(form.task)" add-directive>Add</button>
-  </div>
+  <task-form></task-form>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
   <script src="scripts/module.js"></script>
   <script src="scripts/controller.js"></script>
   <script src="scripts/add-directive.js"></script>
   <script src="scripts/list-hover.js"></script>
+  <script src="scripts/task-form.js"></script>
+  <script src="scripts/task-list.js"></script>
 </body>
 </html>

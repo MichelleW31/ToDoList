@@ -9,6 +9,16 @@
         $element.on("mouseleave", function(){
           $element.css("background-color", "white");
         });
+        $element.on("mouseenter", function(){
+          console.log($element);
+          var path = $element["0"].lastElementChild;
+          path.style.color="red";
+        });
+        $element.on("mouseleave", function(){
+          console.log($element);
+          var path = $element["0"].lastElementChild;
+          path.style.color="black";
+        });
       }
     };
   };
