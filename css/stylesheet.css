@@ -4,21 +4,62 @@
 }
 
 body{
-    background: linear-gradient(to right, #f857a6, #ff5858)
+    background: linear-gradient(to right, #f857a6, #ff5858);
 }
 
 #list{
     margin:20px auto;
-    width: 55%;
-    max-width:300px;
+    width: 30%;
     min-width:255px;
-    display:flex;
-    flex-direction:column;
     background-color:#fff;
-    padding:20px 20px 15px 20px;
+    padding:20px 20px 35px 20px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     border-radius:4px;
+}
 
+#welcomeinfo{
+    position:relative;
+}
+
+#welcomeinfo a{
+    position:absolute;
+    right:12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    color:#ffa3d1;
+}
+
+#welcomeinfo a:hover{
+    text-decoration:none;
+}
+
+#welcomeinfo .material-icons.md-18{ 
+    position:absolute;
+    top:1px;
+    font-size: 18px; 
+}
+
+#formlist{
+    display:flex;
+    flex-direction:column;
+}
+
+#formlist a{
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    color:#ffa3d1;
+    position:relative;
+    margin-bottom:5px;
+}
+
+#formlist a:hover{
+    text-decoration:none;
+}
+
+#formlist .material-icons.md-18{
+    font-size: 18px; 
+    position:relative;
+    top:4px;
 }
 
 #list h1{
@@ -28,7 +69,7 @@ body{
 
 #list p{
    font-family: 'Open Sans', sans-serif;
-   font-size:13px;
+   font-size:15px;
    margin-bottom: 15px;
 }
 
@@ -63,9 +104,6 @@ ol li{
     transition: background-color 1s ease;
 }
 
-/* ol li:hover{
-    background-color:#eee;
-} */
 
 ol li i{
     position:absolute;
@@ -88,12 +126,11 @@ ol li i{
     transition: background-color 1s ease;
 }
 
-/* #list button:hover{
-    background-color:#ff1493;
+@media screen and (max-width:480px){
+    #list{
+        max-width:300px;
+    }
 
-} */
-
-@media screen and (min-width:480px){
     #list p{
         font-size:15px;
     }

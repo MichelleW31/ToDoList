@@ -11,14 +11,21 @@
       rel="stylesheet">
 </head>
 <body>
-  <task-form></task-form>
+
+  <div id="list">
+    <ng-view></ng-view>
+  </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
   <script src="scripts/module.js"></script>
   <script src="scripts/controller.js"></script>
   <script src="scripts/add-directive.js"></script>
   <script src="scripts/list-hover.js"></script>
   <script src="scripts/task-form.js"></script>
   <script src="scripts/task-list.js"></script>
+  <script src="scripts/data-service.js"></script>
+  <script src="scripts/welcome-component.js"></script>
 </body>
 </html>
