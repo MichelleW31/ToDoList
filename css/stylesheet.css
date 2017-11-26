@@ -8,7 +8,7 @@ body{
 }
 
 #list{
-    margin:20px auto;
+    margin:60px auto;
     width: 30%;
     min-width:255px;
     background-color:#fff;
@@ -133,6 +133,14 @@ ol li i{
 
     #list p{
         font-size:15px;
+    }
+
+    #welcomeinfo h1{
+        font-size: 22px;
+    }
+
+    #welcomeinfo p{
+        font-size:13px;
     }
 }
 
