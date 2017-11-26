@@ -3,7 +3,7 @@
     .module("app",["ngRoute"])
     .config(function($routeProvider){
       $routeProvider
-      .when("/",{
+      .when("/welcome",{
         template:`
           <welcome-component></welcome-component>
         ` ,
@@ -15,5 +15,8 @@
         `,
         controller:"FormController as form"
       })
+      .otherwise({
+        redirectTo: "/welcome"
+      });
     });
 })();
