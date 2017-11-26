@@ -3,7 +3,7 @@
     controller:"FormController",
     template: `<form>
       <div id='formlist'>
-      <a href="#!/welcome"><i class="material-icons md-18">arrow_back</i>Go back</a>
+      <a href="#!/"><i class="material-icons md-18">arrow_back</i>Go back</a>
       <h1>TODO List</h1>
       <p>A place to store the things you have to do!</p>
       <input type='text' ng-model='$ctrl.filterTry' placeholder='Filter your to-dos'/>
