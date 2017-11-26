@@ -3,7 +3,7 @@
     .module("app",["ngRoute"])
     .config(function($routeProvider){
       $routeProvider
-      .when("/welcome",{
+      .when("/",{
         template:`
           <welcome-component></welcome-component>
         ` ,
